@@ -25,8 +25,9 @@ export default function Navbar() {
         </nav>
         <a
           href="#contact"
-          className="inline-flex">
+          className="inline-flex mt-2">
           <SocialIcon url="https://www.linkedin.com/in/alex-fox-996364212"/>
+          <SocialIcon url="https://github.com/alexfox361" className="ml-5"/>
           {/* <Icon icon="mdi-light:home" /> */}
         </a>
       </div>
