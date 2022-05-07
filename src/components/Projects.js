@@ -4,7 +4,7 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-white bg-black border-b body-font">
+    <section id="projects" className="text-white bg-black body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-10">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
@@ -41,6 +41,7 @@ export default function Projects() {
           ))} */}
         </div>
       </div>
+            <hr className="m-auto w-5/6"></hr>
     </section>
   );
 }

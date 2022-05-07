@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
     return(
-        <section id="about" className="border-b text-white bg-black body-font">
+        <section id="about" className="text-white bg-black body-font">
             <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img className="border-2 border-purple-500 w-3/4 h-3/4 rounded-full object-cover mx-auto mb-5" src={"https://i.imgur.com/iytFLQJ.jpeg"} alt="self image" />
@@ -27,6 +27,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            <hr className="m-auto w-5/6"></hr>
         </section>
     );
 }
