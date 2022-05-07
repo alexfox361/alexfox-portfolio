@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative text-gray-400 bg-gray-900 body-font">
+    <section id="contact" className="relative text-white bg-black body-font">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -68,7 +68,7 @@ export default function Contact() {
           name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-3 font-medium title-font">
+          <h2 className="text-purple-400 sm:text-4xl text-3xl mb-3 font-medium title-font">
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
@@ -113,7 +113,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-secondary rounded text-lg">
+            className="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-400 rounded text-lg">
             Submit
           </button>
         </form>
