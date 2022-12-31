@@ -7,7 +7,7 @@ import Experience from "./components/Experience";
 
 export default function App() {
   return (
-    <main classname="text-red-400 bg-black-900 body-font"> 
+    <main className="text-red-400 bg-black-900 body-font"> 
       <Navbar />
       <About />
       <Experience />
