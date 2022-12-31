@@ -35,9 +35,9 @@ export const projects = [
 
 export const skills = [
   "JavaScript",
-  "C++",
-  "Section 508 Compliance",
   "HTML/CSS",
+  "WCAG and 508 Compliance",
+  "C++",
   "React",
   "jQuery",
 ];
