@@ -51,6 +51,27 @@ export default function Experience() {
 
   function showcaseSelect(index) {
 
+    var showcaseSet = false;
+    var offsetBefore = 0;
+    var offsetOffset = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+      if (i == parseInt(index)) {
+
+      } 
+      else {
+        if (showcaseSet) {
+          // set to middle value plus offset
+          // increment offset after
+        }
+        else {
+          // set to first item plus offset
+          // if first item plus offset does not equal the showcase
+          // increment the offset before
+        }
+      } 
+    }
+
     if (index == "0") {
       document.getElementById("slide0").setAttribute("value", 2);
       document.getElementById("slide0").src="https://i.imgur.com/" + arr[2] + ".png";

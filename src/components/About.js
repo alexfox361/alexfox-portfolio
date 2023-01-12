@@ -5,7 +5,7 @@ export default function About() {
         <section id="about" className="text-white bg-gray-800 body-font">
             <div className="md:flex px-10 py-10">
                 <div className="md:w-1/4">
-                    {/* <img className="md:w-3/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg object-cover my-5" src="https://i.imgur.com/tRrN1Uq.png" alt="<blockquote className="></img> */}
+                    <img className="md:w-3/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg object-cover my-5" src="https://i.imgur.com/tRrN1Uq.png" alt="<blockquote className="></img>
                 </div>
                 <div className="md:w-3/4 md:m-10 md:text-left text-center">
                     <div className="">
