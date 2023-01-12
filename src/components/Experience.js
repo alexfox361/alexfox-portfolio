@@ -16,9 +16,14 @@ export default function Experience() {
       if (valueArr[i] > arr.length - 1) { 
         valueArr[i] = 0; 
       }
-      console.log(valueArr[i]);
-      document.getElementById("slide" + i).setAttribute("value", valueArr[i]);
+      if (i == 1) {
+        document.getElementById("selection" + valueArr[i]).style.opacity = 1;
+      } 
+      else {
+        document.getElementById("selection" + valueArr[i]).style.opacity = 0.25;
+      }
 
+      document.getElementById("slide" + i).setAttribute("value", valueArr[i]);
       document.getElementById("slide" + i).src="https://i.imgur.com/" + arr[valueArr[i]] + ".png";
     }
   }
@@ -32,9 +37,58 @@ export default function Experience() {
       if (valueArr[i] < 0) { 
         valueArr[i] = arr.length - 1; 
       }
-      document.getElementById("slide" + i).setAttribute("value", valueArr[i]);
+      if (i == 1) {
+        document.getElementById("selection" + valueArr[i]).style.opacity = 1;
+      } 
+      else {
+        document.getElementById("selection" + valueArr[i]).style.opacity = 0.25;
+      }
 
+      document.getElementById("slide" + i).setAttribute("value", valueArr[i]);
       document.getElementById("slide" + i).src="https://i.imgur.com/" + arr[valueArr[i]] + ".png";
+    }
+  }
+
+  function showcaseSelect(index) {
+
+    if (index == "0") {
+      document.getElementById("slide0").setAttribute("value", 2);
+      document.getElementById("slide0").src="https://i.imgur.com/" + arr[2] + ".png";
+
+      document.getElementById("slide1").setAttribute("value", 0);
+      document.getElementById("slide1").src="https://i.imgur.com/" + arr[parseInt(index)] + ".png";
+      
+      document.getElementById("slide2").setAttribute("value", 1);
+      document.getElementById("slide2").src="https://i.imgur.com/" + arr[1] + ".png";
+    }
+    else if (index == "1") {
+      document.getElementById("slide0").setAttribute("value", 0);
+      document.getElementById("slide0").src="https://i.imgur.com/" + arr[0] + ".png";
+
+      document.getElementById("slide1").setAttribute("value", 1);
+      document.getElementById("slide1").src="https://i.imgur.com/" + arr[parseInt(index)] + ".png";
+      
+      document.getElementById("slide2").setAttribute("value", 2);
+      document.getElementById("slide2").src="https://i.imgur.com/" + arr[2] + ".png";
+    }
+    else {
+      document.getElementById("slide0").setAttribute("value", 1);
+      document.getElementById("slide0").src="https://i.imgur.com/" + arr[1] + ".png";
+
+      document.getElementById("slide1").setAttribute("value", 2);
+      document.getElementById("slide1").src="https://i.imgur.com/" + arr[parseInt(index)] + ".png";
+      
+      document.getElementById("slide2").setAttribute("value", 0);
+      document.getElementById("slide2").src="https://i.imgur.com/" + arr[0] + ".png";
+    }
+
+    for (var i = 0; i < arr.length; i++) {
+      if (i == parseInt(index)) {
+        document.getElementById("selection" + i).style.opacity = 1;
+      }
+      else {
+        document.getElementById("selection" + i).style.opacity = 0.25;
+      }
     }
   }
 
@@ -67,6 +121,11 @@ export default function Experience() {
             </button>
 
             <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/hq7sa0f.png"></img>
+          </div>
+          <div className="flex justify-center">
+            <div onClick={() => showcaseSelect("0")} id="selection0" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
+            <div onClick={() => showcaseSelect("1")} id="selection1" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full"></div>
+            <div onClick={() => showcaseSelect("2")} id="selection2" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
           </div>
       </div>
     </section>
