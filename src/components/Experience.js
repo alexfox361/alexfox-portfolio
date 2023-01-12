@@ -1,9 +1,13 @@
 import { AcademicCapIcon } from "@heroicons/react/solid";
 import React from "react";
+import React, { useState } from "react";
 
 {/* <AcademicCapIcon className="w-10 inline-block mb-4" /> */}
 
 export default function Experience() {
+
+  const [showcase, setShowcase] = useState("hidden");
+  const [popup, setPopup] = useState(false);
 
   const arr = ["vhTx76G", "wuH1z1S", "hq7sa0f"];
 
@@ -113,6 +117,10 @@ export default function Experience() {
     }
   }
 
+  function openShowcase() {
+    console.log("you opened the " + document.getElementById("slide1").getAttribute("value") + " showcase!")
+  }
+
   return (
     <section id="exp" className="text-white bg-gray-800 body-font">
       <div className="container px-10 py-10 mx-auto">
@@ -125,7 +133,7 @@ export default function Experience() {
           </p>
         </div>
           <div className="relative flex justify-center" id="showcase">
-            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
+            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-1/4 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
             
             <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
@@ -133,7 +141,7 @@ export default function Experience() {
               </svg>
             </button>
 
-            <img value="1" id="slide1" className="z-40 mx-5 md:w-1/2 w-1/2 border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/wuH1z1S.png"></img>
+            <img onClick={() => openShowcase()} value="1" id="slide1" className="z-40 mx-5 md:w-1/2 w-1/2 border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/wuH1z1S.png"></img>
 
             <button onClick={() => slideRight()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
