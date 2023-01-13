@@ -16,7 +16,15 @@ module.exports = {
       ...theme('colors'),
       'primary': '#ancdee',
       'secondary': '#00638a'
-    })
+    }),
+    extend: {
+      colors: {
+        'unlv-grey': '#808080',
+        'unlv-red': '#e31936',
+        'fia-green': '#244e30',
+        'fia-yellow': '#f6e664',
+      }
+    }
   },
   variants: {
     extend: {},
