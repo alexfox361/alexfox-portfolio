@@ -5,23 +5,40 @@ import React, { useState } from "react";
 
 export default function Experience() {
 
-  const arr = ["vhTx76G", "wuH1z1S", "hq7sa0f"];
+  const arr = ["vhTx76G", "wuH1z1S", "CcMH8bH"];
   
   const FIA = {
-    'title': "UNLV-FIA",
-    'type': "Internship",
-
+    'title': "UNLV-Forest Inventory and Analysis",
+    'type': "Full Stack Intern",
+    'timeframe': "(September 2021 - Present)", 
+    'desc': `I am currently an intern for the Forest Inventory and Analysis National Program. In this role I initially had a primary focus of 
+             finding and remidiating accessibility violations according to WCAG 2.0 and Section 508 requirements. Over time I have 
+             worked on more general issues such as bug fixes and website enhancements.`,
+    'header': "Related Information:",
+    'info1': "Stack Used: HTML/CSS, JavaScript, jQuery, and .NET Framework.",
+    'info2': "Completed over 50 Pull Requests and 5,000 lines of code.",
+    'info3': "Participated in code review and weekly meetings.",
   }
 
   const UNLV = {
-    'title': "UNLV",
-    'type': "Education",
-
+    'title': "University of Nevada, Las Vegas",
+    'type':  "Bachelor's of Science in Computer Science",
+    'timeframe': "(August 2019 - May 2023)", 
+    'desc': `I am currently a senior at UNLV have a 3.4 GPA. During my time at UNLV I have held different on campus jobs, such as
+             a Assistive Technology Assistant at the Disability Resource Center and a Student Developer Intern for the Geoscience 
+             Department. `,
+    'header': "Relevant Courses:",
+    'info1': "CS 302 - Data Structures",
+    'info2': "MATH 181/182 - Calculus 1 and 2",
+    'info3': "ENG 407B - Fundamentals of Technical Writing",
   }
 
   const RAND = {
     'title': "Skills and Experience",
     'type': "Skills and Experience",
+    'info1': "wooo",
+    'info2': "wooo",
+    'info3': "wooo",
 
   }
   
@@ -162,8 +179,8 @@ export default function Experience() {
   }
 
   return (
-    <section id="exp" className="text-white bg-gray-800 body-font">
-      <div className="container px-10 py-10 mx-auto">
+    <section id="exp" className="flex flex-grow text-white bg-gray-800 body-font">
+      <div className="container md:px-10 px-2 py-10 mx-auto">
         <div className="mb-10">
           <h1 className="text-center md:text-5xl text-2xl mb-4">
             Experience
@@ -173,23 +190,23 @@ export default function Experience() {
           </p>
         </div>
           <div className="relative flex justify-center" id="showcase">
-            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-1/4 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
+            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-4/6 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
             
-            <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
+            <button onClick={() => slideRight()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </button>
 
-            <img onClick={() => openShowcase()} value="1" id="slide1" className="z-40 mx-5 md:w-1/2 w-1/2 border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/wuH1z1S.png"></img>
+            <button className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="md:h-auto md:w-auto object-cover h-96 w-96" onClick={() => openShowcase()} value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
 
-            <button onClick={() => slideRight()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
+            <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </button>
 
-            <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/hq7sa0f.png"></img>
+            <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5  w-4/6 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/CcMH8bH.png"></img>
           </div>
           <div className="flex justify-center">
             <div onClick={() => showcaseSelect("0")} id="selection0" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
@@ -197,8 +214,8 @@ export default function Experience() {
             <div onClick={() => showcaseSelect("2")} id="selection2" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
           </div>
       </div>
-      <div className={`justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 ${showcase}`}>
-        <div className={`mx-2 p-4 shadow-sm bg-gray-900 border-purple-400 border-4 w-4/5 h-5/6 rounded-lg`}>
+      <div className={`justify-center items-center flex fixed inset-0 z-50 ${showcase}`}>
+        <div className={`mx-2 p-4 shadow-sm bg-gray-900 overflow-auto border-purple-400 border-4 md:w-3/5 md:h-auto h-5/6 w-11/12 rounded-lg`}>
           <div className="grid content-end">
             <button onClick={() => closeShowcase()} className={`text-lg flex place-self-end text-purple-400`}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
@@ -206,9 +223,39 @@ export default function Experience() {
               </svg>
             </button>
           </div>
-          <div>
+          <div className="text-5xl p-4 text-purple-400">
             {showcaseInfo[showcaseValue].title}
-            {showcaseInfo[showcaseValue].info}
+          </div>
+          <div className="text-2xl px-4">
+            {showcaseInfo[showcaseValue].type}
+          </div>
+          <div className="text-xl px-4 pb-8">
+            {showcaseInfo[showcaseValue].timeframe}
+          </div>
+          <div class="w-11/12 m-auto flex-grow border-t-2 border-purple-400"></div>
+          <div className="text-xl p-4">
+            {showcaseInfo[showcaseValue].desc}
+          </div>
+          <div className="text-xl p-4">
+          {showcaseInfo[showcaseValue].header}
+          </div>
+          <div className="text-xl px-8">
+            <ul>
+              <li>
+                - {showcaseInfo[showcaseValue].info1}
+              </li>
+              <li>
+                - {showcaseInfo[showcaseValue].info2}
+              </li>
+              <li>
+                - {showcaseInfo[showcaseValue].info3}
+              </li>
+            </ul>
+          </div>
+          <div className="grid content-end pt-4">
+            <button onClick={() => closeShowcase()} className="flex place-self-end border-2 max-w-min border-purple-400 rounded-lg px-4 py-2 bg-gray-800 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
+              Close
+            </button>
           </div>
         </div>
       </div>

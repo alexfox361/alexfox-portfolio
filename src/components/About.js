@@ -3,11 +3,11 @@ import React from "react";
 export default function About() {
     return(
         <section id="about" className="text-white bg-gray-800 body-font">
-            <div className="md:flex px-10 py-10">
-                <div className="md:w-1/4">
-                    <img className="md:w-3/5 w-1/2 mx-auto border-2 border-purple-400 rounded-lg object-cover my-5" src="https://i.imgur.com/tRrN1Uq.png" alt="<blockquote className="></img>
+            <div className="container md:flex px-5 py-10 mx-auto">
+                <div className="md:w-1/4 py-2">
+                    <img className="mx-auto md:w-3/5 w-1/2 border-2 border-purple-400 rounded-lg" src="https://i.imgur.com/tRrN1Uq.png" alt="<blockquote className="></img>
                 </div>
-                <div className="md:w-3/4 md:m-10 md:text-left text-center">
+                <div className="md:w-3/4 md:text-left text-center  py-2">
                     <div className="">
                         <div className="md:text-8xl text-4xl">
                             Hi, I'm Alex

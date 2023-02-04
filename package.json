@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
+    "@headlessui/react": "^1.7.9",
     "@heroicons/react": "^1.0.1",
     "@material-tailwind/react": "^1.2.4",
     "framer-motion": "^4.1.17",
