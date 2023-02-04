@@ -32,11 +32,15 @@ export default function About() {
                     </div>
                     <div className="md:mt-10 mt-3">
                         <div >
-                            <a href="https://www.linkedin.com/in/alex-fox-996364212"  target="_blank" className="md:mr-4 mr-2 border-2 border-purple-400 rounded-lg px-4 py-2 bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
-                                Contact Me
-                            </a>
-                            <button className="border-2 border-purple-400 rounded-lg px-4 py-2 bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
-                                My Experience
+                            <button className="md:mr-4 mr-2 border-2 border-purple-400 rounded-lg px-4 py-2 bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
+                                <a href="https://www.linkedin.com/in/alex-fox-996364212"  target="_blank" >
+                                    Contact Me
+                                </a>
+                            </button>
+                            <button className="md:mr-4 mr-2 border-2 border-purple-400 rounded-lg px-4 py-2 bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
+                                <a href="#exp">
+                                    Experience
+                                </a>
                             </button>
                         </div>
                     </div>

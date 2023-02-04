@@ -56,7 +56,7 @@ function Navbar() {
                     <a href="#exp" className="mr-5 hover:text-purple-400">
                       Experience
                     </a>
-                    <a href="#contact" className="mr-5 hover:text-purple-400">
+                    <a  href="https://www.linkedin.com/in/alex-fox-996364212"  target="_blank"  className="mr-5 hover:text-purple-400">
                       Contact
                     </a>
                   </div>
@@ -112,7 +112,7 @@ function Navbar() {
                 <a href="#exp" className="mr-5 hover:text-purple-400">
                   Experience
                 </a>
-                <a href="#contact" className="mr-5 hover:text-purple-400">
+                <a  href="https://www.linkedin.com/in/alex-fox-996364212"  target="_blank"  className="mr-5 hover:text-purple-400">
                   Contact
                 </a>
 
