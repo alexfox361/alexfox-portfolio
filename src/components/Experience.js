@@ -11,9 +11,10 @@ export default function Experience() {
     'title': "UNLV-Forest Inventory and Analysis",
     'type': "Full Stack Intern",
     'timeframe': "(September 2021 - Present)", 
-    'desc': `I am currently an intern for the Forest Inventory and Analysis National Program. In this role I initially had a primary focus of 
-             finding and remidiating accessibility violations according to WCAG 2.0 and Section 508 requirements. Over time I have 
-             worked on more general issues such as bug fixes and website enhancements.`,
+    'desc': `I am currently an intern for the Forest Inventory and Analysis National Program. 
+             I began this role with a primary focus on finding and remediating accessibility violations 
+             according to WCAG 2.0 and Section 508 requirements. Over time I have worked on more general issues, 
+             such as bug fixes and website enhancements.`,
     'header': "Related Information:",
     'info1': "Stack Used: HTML/CSS, JavaScript, jQuery, and .NET Framework.",
     'info2': "Completed over 50 Pull Requests and 5,000 lines of code.",
@@ -34,11 +35,15 @@ export default function Experience() {
   }
 
   const RAND = {
-    'title': "Skills and Experience",
-    'type': "Skills and Experience",
-    'info1': "wooo",
-    'info2': "wooo",
-    'info3': "wooo",
+    'title': "Accessibility",
+    'desc': `Through work experience, I have gained expertise in remediating non-accessible content. 
+             I am knowledgeable in WCAG 2.0 and Section 508 web requirements. 
+             I have also converted thousands of pages of textbooks and coursework material to work with screen readers. 
+             Accessibility is important to me because I believe that everyone should have equal access to information on the internet.`,
+    'header': "Related Technology:",
+    'info1': "Screen Readers: JAWS, NVDA, Kurzweil.",
+    'info2': "ANDI - Accessibility Testing Tool.",
+    'info3': "W3C Accessibility Evaluation Tools.",
 
   }
   
@@ -182,12 +187,9 @@ export default function Experience() {
     <section id="exp" className="flex flex-grow text-white bg-gray-800 body-font">
       <div className="container md:px-10 px-2 py-10 mx-auto">
         <div className="mb-10">
-          <h1 className="text-center md:text-5xl text-2xl mb-4">
+          <h2 className="text-center md:text-5xl text-2xl mb-4">
             Experience
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            From my education, personal projects, and jobs, I've learned these skills:
-          </p>
+          </h2>      
         </div>
           <div className="relative flex justify-center" id="showcase">
             <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-4/6 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
@@ -198,7 +200,7 @@ export default function Experience() {
               </svg>
             </button>
 
-            <button className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="md:h-auto md:w-auto object-cover h-96 w-96" onClick={() => openShowcase()} value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
+            <button className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="rounded md:h-auto md:w-auto object-cover h-96 w-96" onClick={() => openShowcase()} value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
 
             <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
@@ -207,7 +209,10 @@ export default function Experience() {
             </button>
 
             <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5  w-4/6 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/CcMH8bH.png"></img>
-          </div>
+          </div>    
+          <p className="mb-2 text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            
+          </p>
           <div className="flex justify-center">
             <div onClick={() => showcaseSelect("0")} id="selection0" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
             <div onClick={() => showcaseSelect("1")} id="selection1" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full"></div>
