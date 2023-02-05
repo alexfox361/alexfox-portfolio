@@ -200,7 +200,7 @@ export default function Experience() {
               </svg>
             </button>
 
-            <button className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="rounded md:h-auto md:w-auto object-cover h-96 w-96" onClick={() => openShowcase()} value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
+            <button onClick={() => openShowcase()} className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="rounded md:h-auto md:w-auto object-cover h-96 w-96" value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
 
             <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
