@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 export default function Experience() {
 
-  const arr = ["vhTx76G", "wuH1z1S", "CcMH8bH"];
+  const arr = ["CcMH8bH", "vhTx76G", "wuH1z1S"];
   
   const FIA = {
     'title': "UNLV-Forest Inventory and Analysis",
@@ -49,7 +49,7 @@ export default function Experience() {
   
   const showcasePrimaryList = ["fia-green", "unlv-grey", "black"];
   const showcaseSecondaryList = ["fia-yellow", "unlv-red", "white"];
-  const showcaseInfo = [FIA, UNLV, RAND];
+  const showcaseInfo = [RAND, FIA, UNLV];
 
 
   const [showcase, setShowcase] = useState("invisible");
@@ -192,7 +192,7 @@ export default function Experience() {
           </h2>      
         </div>
           <div className="relative flex justify-center" id="showcase">
-            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-4/6 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/vhTx76G.png"></img>
+            <img value="0" id="slide0" className="self-center absolute opacity-25 left-10 md:w-2/5 w-4/6 md:h-max mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/CcMH8bH.png"></img>
             
             <button onClick={() => slideRight()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
@@ -200,7 +200,7 @@ export default function Experience() {
               </svg>
             </button>
 
-            <button onClick={() => openShowcase()} className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="rounded md:h-auto md:w-auto object-cover h-96 w-96" value="1" id="slide1" src="https://i.imgur.com/wuH1z1S.png"></img></button>
+            <button onClick={() => openShowcase()} className="hover:shadow-3xl z-40 mx-5 md:w-1/2 border-2 border-purple-400 rounded-lg my-5" ><img className="rounded md:h-auto md:w-auto object-cover h-96 w-96" value="1" id="slide1" src="https://i.imgur.com/vhTx76G.png"></img></button>
 
             <button onClick={() => slideLeft()} className="z-40 self-center border-2 border-purple-400 rounded-lg bg-gray-900 hover:bg-purple-400 hover:border-white focus:bg-purple-400 focus:border-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
@@ -208,7 +208,7 @@ export default function Experience() {
               </svg>
             </button>
 
-            <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5  w-4/6 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/CcMH8bH.png"></img>
+            <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5  w-4/6 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/wuH1z1S.png"></img>
           </div>    
           <p className="mb-2 text-center leading-relaxed text-sm xl:w-2/4 lg:w-2/4 mx-auto">
             (Click Preview for More Information)
