@@ -210,8 +210,8 @@ export default function Experience() {
 
             <img value="2" id="slide2" className="self-center absolute opacity-25 right-10 md:w-2/5  w-4/6 mx-auto border-2 border-purple-400 rounded-lg my-5" src="https://i.imgur.com/CcMH8bH.png"></img>
           </div>    
-          <p className="mb-2 text-center leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            
+          <p className="mb-2 text-center leading-relaxed text-sm xl:w-2/4 lg:w-2/4 mx-auto">
+            (Click Preview for More Information)
           </p>
           <div className="flex justify-center">
             <div onClick={() => showcaseSelect("0")} id="selection0" tabindex="0" className="mx-2 p-4 shadow-sm bg-purple-400 w-8 h-8 rounded-full opacity-25"></div>
